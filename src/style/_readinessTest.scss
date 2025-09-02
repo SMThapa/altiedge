@@ -1,0 +1,96 @@
+.readinessPage {
+    .pageContents{
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;    
+    }
+    .detailedSteps{
+        .step{
+            min-height: 400px;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;    
+            margin-bottom: 25px;  
+            img{
+                height: 500px;
+                width: 100%;
+                object-fit: cover;    
+            }   
+            .step-contents{
+                position: relative;       
+                padding-left: 8%;
+                padding-top: 10%;
+                .stepTitle{
+                    font-family: var(--font-bold);
+                    font-size: var(--font-size3);
+                    line-height: 1;      
+                    color: var(--text-dark);    
+                    width: clamp(200px, 25vw, 300px);
+                    margin-left: auto;
+                    text-align: right;
+                    margin-bottom: 55px;
+                    z-index: 5;
+                    margin-right: 20%;
+                }
+                .stepDesc{
+                    width: 55%;                    
+                }
+                .stepNo{
+                    font-family: var(--font-bold);
+                    position: absolute;
+                    top: 20%;                    
+                    transform: translateY(-50%);
+                    font-size: 8rem;
+                    z-index: 1;
+                    opacity: .1;
+                    line-height: 1;
+                    font-weight: 500;
+                }
+            }   
+
+            &:nth-child(even){
+                .step-contents{
+                    order: 1;    
+                    padding-left: 0;
+                    padding-right: 8%;
+                    padding-top:10%;
+                    .stepTitle{
+                        margin: 0 0 45px 20%;
+                        text-align: left;
+                    }
+                    .stepDesc{
+                        margin-left: auto;
+                        text-align: right;
+                    }
+                    .stepNo{
+                        right: 8%;
+                    }
+                }
+                .image-container{
+                    order: 2;
+                }
+            }
+
+        }
+    }
+
+    .test{
+        display: flex;        
+        .left-content{
+            position: sticky;
+            top: 150px;            
+            width: 45%;
+            height: fit-content;
+
+            .sectionDescription{
+                max-width: 100%;
+                padding-left: 120px;
+            }
+        }
+        .right-content{
+            margin-left: 12%;
+            width: 55%;
+        }
+    }
+}

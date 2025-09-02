@@ -1,0 +1,27 @@
+{
+  "name": "altiedge",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "clear": "rm -rf .next"
+  },
+  "dependencies": {
+    "lenis": "^1.3.8",
+    "next": "15.4.6",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-intersection-observer": "^9.16.0",
+    "scss": "^0.2.4",
+    "swiper": "^11.2.10"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.6",
+    "sass": "^1.90.0"
+  }
+}
