@@ -21,9 +21,9 @@ export const Header = async () => {
     <nav className="header-nav">      
       <div className="navigation">
         <div className="logo">
-          <a href="/">
+          <Link href="/">
             <Image src={logo} alt="logo" width={50} height={50} />
-          </a>
+          </Link>
         </div>
         <div className="menu-section">
           <ul>
