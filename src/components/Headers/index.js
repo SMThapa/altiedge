@@ -5,6 +5,7 @@ import { headers } from 'next/headers';
 import ActiveLink from './ActiveLink';
 
 import logo from '../../assets/icons/logo.webp'
+import { HamburgerToggle } from './HamburgerToggle';
 
 export const Header = async () => {
   const requestHeaders = await headers();
@@ -37,7 +38,8 @@ export const Header = async () => {
                   >{link.name}</Link>
                 </li>
               ))
-            }                      
+            }  
+            <HamburgerToggle/>                    
           </ul>
         </div>
         <div className="action-section">
